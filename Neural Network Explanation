@@ -1,0 +1,24 @@
+The neural network, consisting of interconnected nodes arranged in layers,
+comprises the input layer, hidden layers, and output layer. Initially, the input layer
+receives the initial data for processing. Subsequently, in the hidden layers, each neuron
+processes this information by aggregating inputs, weighted by connection strengths,
+and applying activation functions to produce outputs. These hidden layers perform
+complex computations, transforming the data to capture intricate patterns and features.
+Finally, the output layer generates the network's predictions or results based on the
+computations carried out in the hidden layers. Overall, the neural network's structure
+allows it to learn and extract meaningful representations from the data, enabling it to
+make predictions or classifications.
+After splitting the data, I proceeded to preprocess the training, testing, and
+validation data to transform the raw information into a suitable format for training. For
+instance, when applying preprocessing.fit_transform(X_train) to the training data, I
+simultaneously learned from and transformed the data. Similarly, I utilized this process
+for the other two sets of data.
+The next step was to create the actual model. I used a sequential model, which
+allows the creation of a linear stack of layers. I created 64 neurons in each layer using
+the ReLU activation function, with the input shape matching the number of features.
+Then, I created the second hidden layer with only 32 neurons, and the output layer with
+just one dense connection, using the default linear activation function. To train the
+model, I utilized the Adam optimizer on the Root Mean Squared Error metric. The model
+was then trained using the training dataset for a specified number of epochs,
+representing the iterations over the entire training dataset during the training process.
+Finally, I evaluated the model's performance using the dedicated validation dataset
