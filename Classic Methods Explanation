@@ -1,0 +1,10 @@
+
+Now, moving to the classical methods. Classical methods, unlike neural
+networks, are more fundamental. In this case, we will explore KNeighborsRegressor,
+RandomForestRegressor, and Linear Regression. Here's a quick overview of the three:
+KNeighborsRegressor predicts the target variable by averaging the values of the k
+nearest neighbors. RandomForestRegressor builds multiple trees and aggregates their
+predictions to improve accuracy and prevent overfitting. It's important to note that
+overfitting occurs when a learning model learns the data too well. Lastly, Linear
+Regression fits a linear equation to predict the relationship between dependent and
+independent variables.
