@@ -1,0 +1,20 @@
+
+Now, let's dive into the next method used: SVM. A quick recap of SVM shows
+that it relies on support vectors, which are data points closest to the hyperplane and are
+crucial in determining the optimal boundary. Its main task is to find the best possible
+decision boundaries that separate the data. It's important to understand what a kernel is
+in this context. A kernel, in simple terms, calculates the similarity between pairs of data
+points. I opted for the linear kernel model because I thought it would be a good fit for my
+project. This setup allows me to preprocess my SVM model, which will be utilized for the
+project.
+After creating the model, I proceeded to train it with the available data.
+Subsequently, I made predictions using the validation set. Let's review some of the
+outcomes obtained from the SVM model. Initially, we noticed that the model accurately
+classified 67% of the data points. However, for class 0 (representing employee
+dissatisfaction), the precision, recall, and F1-score were all zero. Conversely, class 1
+(indicating employee satisfaction) displayed a precision of 0.67, a recall of 1, and an
+F1-score of 0.8. These metrics signify that the model effectively captures all instances of
+actual satisfied employees (recall), while around 67% of the identified satisfied
+employees are indeed correct (precision). The F1-score of 0.8 demonstrates a
+harmonious balance between precision and recall, indicating reasonably good
+performance in our case
