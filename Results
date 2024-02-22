@@ -1,0 +1,13 @@
+
+Upon analyzing the results, it's evident that both the Random Forest, KNN and
+Neural Network models exhibit lower Root Mean Squared Error (RMSE), indicating
+better predictive accuracy. Conversely, the SVM model displays the highest RMSE on
+both validation and test sets, indicating the least accuracy in predicting employee
+satisfaction compared to the other models. Furthermore, examining the runtime reveals
+that the SVM executed the fastest, while the slowest performer was the
+RandomForestRegressor.
+It's intriguing to note that my initial assumption regarding the Neural Networks
+would take the longest was disproven. The neural network, with only two layers (64 and
+32 neutrons respectively), executed faster compared to the Random Forest, which
+involves multiple splits in a tree diagram. While the KNN model actually computed on a
+much faster rate then the two, its output was relatively the same
